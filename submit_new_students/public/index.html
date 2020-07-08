@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Please fill out this form</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div id="parent">
+    
+    <form id="form-user" action="/add-new-student" method="POST">
+        <div class="form-box error" data-errormsg="">
+            <label for="input-first-name">First Name</label>
+            <input type="text" name="firstName" id="input-first-name" autofocus placeholder="please enter the first name" tabindex="1"/>
+        </div>
+        <div class="form-box" data-errormsg="">
+            <label for="input-last-name">Last Name</label>
+            <input type="text" name="lastName" id="input-last-name" required placeholder="please enter the last name" tabindex="2" />
+        </div>
+        <div class="form-box" data-errormsg="">
+            <label for="input-nationality">Nationality</label>
+            <input type="text" name="nationality" id="input-nationality" required placeholder="please enter the nationality" tabindex="3" />
+        </div>
+        <div class="form-box" data-errormsg="">
+            <label for="input-age">Age</label>
+            <input type="number" name="age" id="input-age" required placeholder="please enter the age" tabindex="4" />         
+        </div>
+        <div class="form-box" data-errormsg="">
+            <label for="input-age">Id</label>
+            <input type="number" name="id" id="input-id" required placeholder="please enter the id" tabindex="5" />         
+        </div>
+        <div class="form-box">
+            <button id="button-cancel">Cancel</button>
+            <button id="button-send">Send</button>
+        </div>
+    </form>
+</div>    
+
+    <script src="./main.js"></script>
+</body>
+</html>
